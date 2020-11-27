@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-
-	<script src="robot.js"></script>
-</head>
-<body>
-
-</body>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="board">
+      <div id="row1"></div>
+      <div id="row2"></div>
+      <div id="row3"></div>
+      <div id="row4"></div>
+    </div>
+    <div id="input-panel">
+      <label for="instructions">Instructions:</label><br />
+      <input type="text" id="instructions" name="instructions" /><br />
+      <button onclick="activeRobot.evaluate()">Submit</button>
+    </div>
+    <div class="output-container">
+      <h3>Output:</h3>
+      <ul id="moves"></ul>
+    </div>
+  </body>
+  <script src="robot.js"></script>
 </html>
